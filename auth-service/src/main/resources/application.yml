@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/capital_control_auth
+    username: root
+    password: abcd
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+jwt:
+  secret: 231ec06aed715c989edfb1ce57fb1796113d6b1983639adf85cfadae55afb3dddcc5ec38d18bf5f785e0945e3cfb14c33539f072f6cbb74b636abb0c60f39d94d6b522d6b986b466e7ba9062927ff760c5e4c070af3d541a193741bcf5ccbbf56b483837769b78634adcd001bd59d9c6786ac86bf12e201ad2ca4bd18ae6d844091bbff5b2254b3a435abb0ea40102ac356608bbc2cbd7b79c43a96783fcdd2dead5d70d063d3f9736a6ee2104c2d3ce1e1e4278febd9d0b70b3555d587a74a25c710ba23ed55f0f78c32164ce740faef35df50c27be4e1d6b5fad390b6e1dfd3b3ab7647c4955477898ffd15e1376efa885f3995bd8b796344fec854b1ded11
+  expirationMs: 36000000  # 10 hours
+server:
+  port: 8081
